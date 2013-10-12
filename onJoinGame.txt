@@ -1,0 +1,32 @@
+WAIT(100t);
+LOGTO(ingameMessage,"Welcome to knutremi's keybind config.");
+WAIT(220t);
+LOGTO(ingameMessage,"To disable these messages, delete the onJoinGame event from your event bindings config.");
+WAIT(400t);
+
+&messages[0] = "Replace your WorldEdit selection with air by pressing Ctrl+Delete.";
+&messages[1] = "Select the region you're standing with by pressing Ctrl+N.";
+&messages[2] = "Press B to butcher mobs up to 10 blocks away. Modify with Ctrl to increase to 100. Modify with Shift to include friendly mobs.";
+&messages[3] = "Press V to toggle your vanish state.";
+&messages[4] = "Press Ctrl+Shift+V to expand your WorldEdit selection vertically.";
+&messages[5] = "Press C to toggle between creative and survival.";
+&messages[6] = "To show the button GUI press the key you set as your macro activate key.";
+&messages[7] = "Ctrl+Right/left click replaces the WorldEdit wand.";
+&messages[8] = "Ctrl+Shift+Right/left click replaces the WorldEdit compass.";
+&messages[9] = "Ctrl+Scroll wheel lets you scroll through handy tools in your currently selected hotbar slot.";
+&messages[10] = "Ctrl+Middle mouse replaces your hotbar with either the modtools2, redstone1, redstone2 or redstone3 kit.";
+&messages[11] = "Ctrl+history back on your mouse lets you repeat the last chat or button command.";
+&messages[12] = "WorldEdit history and clipboard commands are accessed with the equivalent text-editor-style keyboard shortcut. E.g. Ctrl+C.";
+&messages[13] = "Rotate your WorldEdit selection using Ctrl+R.";
+&messages[14] = "Toggle downfall by pressing T. Set the time to morning with Ctrl+M.";
+&messages[15] = "Undo VoxelSniper actions with Ctrl+U. Undo 10 of them with Ctrl+Shift+U.";
+&messages[16] = "Press H to go to your home in flatlands. Press Ctrl+H to go to your home in world.";
+&messages[17] = "Got a TerrainControl world and need to regen the chunk you're in? Press Ctrl+J.";
+&messages[18] = "Access a list of runnable macros by pressing L.";
+&messages[19] = "Teleport between floor levels with Ctrl+Scroll."
+
+DO;
+    RANDOM(#message_index,19,0);
+    LOGTO(ingameMessage,%&messages[%#message_index%]%);
+    WAIT(60000ms);
+WHILE(1);

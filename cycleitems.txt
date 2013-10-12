@@ -1,0 +1,24 @@
+$${
+
+IF(ITEM=77);
+    ECHO("/clear -a");
+    ECHO("/kit redstone2");
+ELSEIF(ITEM=29);
+    ECHO("/clear -a");
+    ECHO("/kit redstone3");
+ELSEIF(ITEM=54);
+    ECHO("/clear -a");
+    ECHO("/kit modtools2");
+    ECHO("/b snipe");
+    WAIT(250ms);
+    ECHO("/info");
+    WAIT(250ms);
+    INVENTORYDOWN(1);
+    WAIT(250ms);
+    ECHO("/cycler");
+ELSE;
+    ECHO("/clear -a");
+    ECHO("/kit redstone1");
+ENDIF;
+
+}$$

@@ -1,0 +1,17 @@
+IF(ITEM=51);
+	IF(CTRL);
+		ECHO("//move 10 down");
+		ECHO("//shift 10 down");
+	ELSE;
+		ECHO("//move 1 down");
+		ECHO("//shift 1 down");
+	ENDIF;
+ELSEIF(CTRL);
+	IF(SHIFT); ECHO("//contract 10 down");
+	ELSE; ECHO("//expand 10 down");
+	ENDIF;
+ELSE;
+	IF(SHIFT); ECHO("//contract 1 down");
+	ELSE; ECHO("//expand 1 down");
+	ENDIF;
+ENDIF;

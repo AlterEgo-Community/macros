@@ -1,0 +1,5 @@
+IF(CTRL);
+    FOG();
+ELSE;
+    $$<fly.txt>;
+ENDIF;

@@ -1,0 +1,28 @@
+#
+# events.txt
+# This file stores mapping of event ID's to hookable event names, DO NOT modify the
+# contents of this file unless you know what you are doing. Event names are CASE SENSITIVE
+# and event ID's must fall within the defined event ID range.
+# 
+# NOTE: Currently this file is ONLY WRITTEN and is not read, it is provided to support features in the future
+#
+
+Event[1000].Name=onJoinGame
+Event[1001].Name=onChat
+Event[1002].Name=onHealthChange
+Event[1003].Name=onFoodChange
+Event[1004].Name=onArmourChange
+Event[1005].Name=onWorldChange
+Event[1006].Name=onModeChange
+Event[1007].Name=onInventorySlotChange
+Event[1008].Name=onOxygenChange
+Event[1009].Name=onXPChange
+Event[1010].Name=onLevelChange
+Event[1011].Name=onItemDurabilityChange
+Event[1012].Name=onWeatherChange
+Event[1013].Name=onPickupItem
+Event[1014].Name=onPlayerJoined
+Event[1015].Name=onShowGui
+Event[1016].Name=onArmourDurabilityChange
+Event[1017].Name=onAutoCraftingComplete
+Event[1018].Name=onConfigChange

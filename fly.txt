@@ -1,0 +1,15 @@
+IF(MODE=0);
+    ECHO("/gm 1");
+    wait(320ms);
+ENDIF;
+keydown(jump);
+wait(10ms);
+keyup(jump);
+wait(10ms);
+keydown(jump);
+wait(10ms);
+keyup(jump);
+wait(10ms);
+keydown(jump);
+wait(10ms);
+keyup(jump);

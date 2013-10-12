@@ -1,0 +1,23 @@
+$${
+
+IF(INVSLOT = 1);
+  ECHO("/flyspeed 1");
+ELSEIF(INVSLOT = 2);
+  ECHO("/flyspeed 2");
+ELSEIF(INVSLOT = 3);
+  ECHO("/flyspeed 3");
+ELSEIF(INVSLOT = 4);
+  ECHO("/flyspeed 4");
+ELSEIF(INVSLOT = 5);
+  ECHO("/flyspeed 5");
+ELSEIF(INVSLOT = 6);
+  ECHO("/flyspeed 6");
+ELSEIF(INVSLOT = 7);
+  ECHO("/flyspeed 7");
+ELSEIF(INVSLOT = 8);
+  ECHO("/flyspeed 8");
+ELSEIF(INVSLOT = 10);
+  ECHO("/flyspeed 10");
+ENDIF;
+
+}$$

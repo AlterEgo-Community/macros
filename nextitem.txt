@@ -1,0 +1,18 @@
+$${
+
+// Get the next item with a similar purpose
+// Fire -> logblock -> stick -> string -> cycler
+
+IF(ITEM=51);
+    ECHO("/clear -s|/lb toolblock");
+ELSEIF(ITEM=60);
+    ECHO("/clear -s|/i stick");
+ELSEIF(ITEM=280);
+    ECHO("/clear -s|/i string");
+ELSEIF(ITEM=287);
+    ECHO("/clear -s|/i clock|/cycler");
+ELSE;
+    ECHO("/clear -s|/i fire");
+ENDIF;
+
+}$$

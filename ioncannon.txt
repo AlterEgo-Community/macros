@@ -1,0 +1,4 @@
+DO;
+    ECHO("/shock -sa $$u");
+    WAIT(2s);
+UNTIL(CTRL);
