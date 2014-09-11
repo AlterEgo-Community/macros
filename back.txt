@@ -1,4 +1,4 @@
-IF(ITEM=51);
+IF(ITEM="fire");
     IF(CTRL);
         ECHO("//move 10 back");
         ECHO("//shift 10 back");

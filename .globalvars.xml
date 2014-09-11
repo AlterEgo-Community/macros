@@ -2,4 +2,5 @@
 <!DOCTYPE properties SYSTEM "http://eq2online.net/dtd/properties.dtd">
 <properties>
     <comment>Shared variables store for mod_Macros</comment>
+    <entry key="lastmessage">0</entry>
 </properties>

@@ -33,10 +33,10 @@
         </template>
         <!-- EVENT_ONJOINGAME -->
         <template id="1000">
-            <int key="message_index">6</int>
+            <int key="message_index">16</int>
             <array key="messages" type="string">
                 <element pos="0">Replace your WorldEdit selection with air by pressing Ctrl+Delete.</element>
-                <element pos="1">Select the region you're standing with by pressing Ctrl+N.</element>
+                <element pos="1">Select the region you're standing in by pressing Ctrl+N.</element>
                 <element pos="2">Press B to butcher mobs up to 10 blocks away. Modify with Ctrl to increase to 100. Modify with Shift to include friendly mobs.</element>
                 <element pos="3">Press V to toggle your vanish state.</element>
                 <element pos="4">Press Ctrl+Shift+V to expand your WorldEdit selection vertically.</element>
@@ -54,6 +54,7 @@
                 <element pos="16">Press H to go to your home in flatlands. Press Ctrl+H to go to your home in world.</element>
                 <element pos="17">Got a TerrainControl world and need to regen the chunk you're in? Press Ctrl+J.</element>
                 <element pos="18">Access a list of runnable macros by pressing L.</element>
+                <element pos="19">Teleport between floor levels with Ctrl+Scroll.</element>
             </array>
         </template>
     </config>

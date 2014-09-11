@@ -5,7 +5,7 @@ LOGTO(ingameMessage,"To disable these messages, delete the onJoinGame event from
 WAIT(400t);
 
 &messages[0] = "Replace your WorldEdit selection with air by pressing Ctrl+Delete.";
-&messages[1] = "Select the region you're standing with by pressing Ctrl+N.";
+&messages[1] = "Select the region you're standing in by pressing Ctrl+N.";
 &messages[2] = "Press B to butcher mobs up to 10 blocks away. Modify with Ctrl to increase to 100. Modify with Shift to include friendly mobs.";
 &messages[3] = "Press V to toggle your vanish state.";
 &messages[4] = "Press Ctrl+Shift+V to expand your WorldEdit selection vertically.";

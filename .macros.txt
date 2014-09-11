@@ -4,13 +4,16 @@
 #
 
 # Version number of the mod which saved this file. ***Do not alter this value!***
-version=991
+version=1012
 
 #
 # Settings
 #
 
 autocraft.failed.popup=1
+
+# Set to 1 to enable the chat filter module
+chatfilter.enabled=1
 
 # True to enable custom (designable) GUI in the chat screen
 chatgui.enabled=1
@@ -45,14 +48,14 @@ configs.enable.towns=0
 # Enable per-config warps list, setting this to 0 uses a single list for all configurations
 configs.enable.warps=0
 
-# Enable the custom 'Controls' GUI screen, disable if conflicts
-customcontrolsgui.enabled=1
-
 # Enables on-screen debugging information to help diagnose problems with the mod
 debug.enabled=0
 
-# Change UI mode to invert the SNEAK modifier
-directmode.enabled=0
+# Displays all environment variables on the HUD when debugging is enabled and the minecraft debug info is visible. WARNING THIS CAN DESTROY YOUR FRAMERATE, USE WITH CAUTION
+debug.environment.enabled=0
+
+# Includes all KEY_ environment variables in the environment variable display
+debug.environment.keys=0
 
 discover.commandhomelist=/homes list
 discover.commandtownlist=/town list
@@ -76,7 +79,10 @@ editor.minimiseprompt=nosave
 editor.syntax.enabled=1
 
 # Serialised version of the event layout, each param is {MappingID,X,Y}
-events.layout={1000,6,4}{1001,6,24}{1002,6,44}{1003,6,64}{1004,6,84}{1005,6,104}{1006,6,124}{1007,6,144}{1008,145,4}{1009,145,24}{1010,145,44}{1011,145,64}{1012,145,84}{1013,145,104}{1014,145,124}{1015,145,144}{1016,6,164}{1017,145,164}{1018,284,4}
+events.layout={1000,6,4}{1001,6,24}{1002,6,44}{1003,6,64}{1004,6,84}{1005,6,104}{1006,6,124}{1007,6,144}{1008,145,4}{1009,145,24}{1010,145,44}{1011,145,64}{1012,145,84}{1013,145,104}{1014,145,124}{1015,145,144}{1016,6,164}{1017,145,164}{1018,284,4}{1020,284,24}
+
+# True to enable the filterable chat functionality
+filterablechat.enabled=0
 
 # Flood protection settings
 floodprotection.behaviour.tickslimit=180
@@ -95,6 +101,8 @@ gui.autoscale=0
 
 # Pressing ENTER or ESC in the MACRO EDIT screen will return to the MACRO BIND screen
 gui.bindafteredit=0
+
+gui.bindingmode=Normal
 
 # By default the config name banner now shows the configs dropdown, enable this setting to use the old behaviour
 gui.configname.linkstosettings=0
@@ -130,11 +138,8 @@ input.debounce.ticks=4
 # Disable the deep injection proxy. This proxy enables more reliable key event injection but can cause the game to crash with certain mods.
 input.deepinjection.disabled=0
 
-# Key code for the MACRO ACTIVATE key
-key.activate=14
-
-# Key code for the MACRO OVERRIDE key
-key.override=29
+# Keys which will require MACRO OVERRIDE to function as macro keys
+input.keys.reserved=68,87,59,61
 
 keyboard.colour.bound=#FFFF00
 keyboard.colour.boundspecial=#FFAA00
@@ -195,9 +200,6 @@ override.simplepopup=1
 # Uses standard java formatting string, param 1 is X, 2 is Y and 3 is Z
 place.coordsformat=%1$s %2$s %3$s
 
-# Keys which will require MACRO OVERRIDE to function as macro keys
-reservedkeys=68,87,66,59,63,61,60
-
 # Enable the 'running macros' display
 runstatus.enabled=1
 
@@ -205,6 +207,10 @@ runstatus.enabled=1
 script.run.limitpertick=100
 
 script.run.maxtimesharems=100
+
+# If enabled, items and blocks in the default "minecraft" namespace will be have the minecraft: prefix stripped from their names when returned by script commands or environment variables
+script.stripdefaultnamespace=1
+
 script.trace=0
 
 # True if the script engine should generate warnings for blocked script actions
@@ -249,7 +255,7 @@ Macro[36].Control=1
 
 # KEY_L
 Macro[38].Macro=$${$$m}$$
-Macro[38].File=onJoinGame.txt
+Macro[38].File=away.txt
 
 # KEY_Z
 Macro[44].Macro=//undo
@@ -358,7 +364,7 @@ Macro[253].Control=1
 
 # CONTROL_BUTTON 257
 Macro[257].Macro=$$<defineregion.txt>
-Macro[257].NamedParam[regionname]=Fancy_City
+Macro[257].NamedParam[regionname]=Snowforts
 
 # CONTROL_BUTTON 258
 Macro[258].Macro=//replace air $$i
@@ -515,6 +521,9 @@ Macro[315].Macro=/call $$u
 
 # EVENT_ONJOINGAME
 Macro[1000].Macro=$${$$<onJoinGame.txt>}$$
+
+# EVENT_ONCHAT
+Macro[1001].Macro=$${SET(@lastmessage, %CHATCLEAN%);}$$
 
 # EVENT_ONWORLDCHANGE
 Macro[1005].Macro=$${$$<fly.txt>}$$

@@ -1,0 +1,3 @@
+FOREACH("env");
+  LOGTO("env.txt", "%VARNAME%");
+NEXT;
