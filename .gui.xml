@@ -27,8 +27,8 @@
                 <text>Replace...</text>
                 <visible>1</visible>
             </gc:button>
-            <gc:label colspan="8" id="259" name="LABEL 259" rowspan="3" x="9" y="0">
-                <align>top right</align>
+            <gc:label colspan="8" id="259" name="LABEL 259" rowspan="3" x="9" y="6">
+                <align>bottom right</align>
                 <background>#01000000</background>
                 <binding/>
                 <colour>#00FF00</colour>
@@ -149,7 +149,7 @@
                 <text>Morning</text>
                 <visible>1</visible>
             </gc:button>
-            <gc:button id="274" name="BUTTON 274" x="1" y="0">
+            <gc:button id="274" name="BUTTON 274" x="15" y="0">
                 <background>#B0000000</background>
                 <colour>#00FF00</colour>
                 <hide>0</hide>
@@ -157,7 +157,7 @@
                 <text>break</text>
                 <visible>1</visible>
             </gc:button>
-            <gc:button id="275" name="BUTTON 275" x="2" y="0">
+            <gc:button id="275" name="BUTTON 275" x="16" y="0">
                 <background>#B0000000</background>
                 <colour>#00FF00</colour>
                 <hide>0</hide>
@@ -242,7 +242,7 @@
                 <text>Selection</text>
                 <visible>1</visible>
             </gc:label>
-            <gc:textarea colspan="8" id="285" name="buttonsMessage" rowspan="2" x="9" y="3">
+            <gc:textarea colspan="8" id="285" name="buttonsMessage" rowspan="2" x="9" y="4">
                 <colour>#00FF00</colour>
                 <lifespan>200</lifespan>
                 <visible>1</visible>
@@ -255,7 +255,7 @@
                 <text>Home</text>
                 <visible>1</visible>
             </gc:button>
-            <gc:label id="287" name="LABEL 287" x="0" y="0">
+            <gc:label id="287" name="LABEL 287" x="14" y="0">
                 <align>bottom centre</align>
                 <background>#AA00FFFF</background>
                 <binding/>

@@ -1,3 +1,0 @@
-KEYDOWN(escape);
-WAIT(1000);
-KEYUP(escape;

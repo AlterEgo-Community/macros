@@ -1,0 +1,10 @@
+// Cycle through all the game modes
+// Survival -> Creative -> Adventure
+
+IF(MODE=0);
+    ECHO("/gamemode 1");
+ELSEIF(MODE=1);
+    ECHO("/gamemode 2");
+ELSE;
+    ECHO("/gamemode 0");
+ENDIF;

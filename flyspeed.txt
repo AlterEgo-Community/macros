@@ -1,23 +1,19 @@
-$${
-
 IF(INVSLOT = 1);
-  ECHO("/flyspeed 1");
+  ECHO("/speed fly 1");
 ELSEIF(INVSLOT = 2);
-  ECHO("/flyspeed 2");
+  ECHO("/speed fly 2");
 ELSEIF(INVSLOT = 3);
-  ECHO("/flyspeed 3");
+  ECHO("/speed fly 3");
 ELSEIF(INVSLOT = 4);
-  ECHO("/flyspeed 4");
+  ECHO("/speed fly 4");
 ELSEIF(INVSLOT = 5);
-  ECHO("/flyspeed 5");
+  ECHO("/speed fly 5");
 ELSEIF(INVSLOT = 6);
-  ECHO("/flyspeed 6");
+  ECHO("/speed fly 6");
 ELSEIF(INVSLOT = 7);
-  ECHO("/flyspeed 7");
+  ECHO("/speed fly 7");
 ELSEIF(INVSLOT = 8);
-  ECHO("/flyspeed 8");
-ELSEIF(INVSLOT = 10);
-  ECHO("/flyspeed 10");
+  ECHO("/speed fly 8");
+ELSEIF(INVSLOT = 9);
+  ECHO("/speed fly 9");
 ENDIF;
-
-}$$

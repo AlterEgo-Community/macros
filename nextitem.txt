@@ -1,16 +1,20 @@
 $${
 
 // Get the next item with a similar purpose
-// Fire -> logblock -> stick -> string -> cycler
+// Fire -> logblock -> stick -> arrow -> gunpowder -> cycler -> info
 
-IF(ITEM=51);
+IF(ITEM="fire");
     ECHO("/clear -s|/lb toolblock");
-ELSEIF(ITEM=60);
+ELSEIF(ITEM="farmland");
     ECHO("/clear -s|/i stick");
-ELSEIF(ITEM=280);
-    ECHO("/clear -s|/i string");
-ELSEIF(ITEM=287);
+ELSEIF(ITEM="stick");
+    ECHO("/clear -s|/i arrow");
+ELSEIF(ITEM="arrow");
+    ECHO("/clear -s|/i gunpowder");
+ELSEIF(ITEM="gunpowder");
     ECHO("/clear -s|/i clock|/cycler");
+ELSEIF(ITEM="clock");
+    ECHO("/clear -s|/i book|/info");
 ELSE;
     ECHO("/clear -s|/i fire");
 ENDIF;

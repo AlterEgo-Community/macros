@@ -79,7 +79,7 @@ editor.minimiseprompt=nosave
 editor.syntax.enabled=1
 
 # Serialised version of the event layout, each param is {MappingID,X,Y}
-events.layout={1000,6,4}{1001,6,24}{1002,6,44}{1003,6,64}{1004,6,84}{1005,6,104}{1006,6,124}{1007,6,144}{1008,145,4}{1009,145,24}{1010,145,44}{1011,145,64}{1012,145,84}{1013,145,104}{1014,145,124}{1015,145,144}{1016,6,164}{1017,145,164}{1018,284,4}{1020,284,24}
+events.layout={1000,6,4}{1001,6,24}{1002,6,44}{1003,6,64}{1004,6,84}{1005,6,104}{1006,6,124}{1007,6,144}{1008,6,164}{1009,145,4}{1010,145,24}{1011,145,44}{1012,145,64}{1013,145,84}{1014,145,104}{1015,145,124}{1016,145,144}{1017,145,164}{1018,284,4}{1020,284,24}
 
 # True to enable the filterable chat functionality
 filterablechat.enabled=0
@@ -97,7 +97,7 @@ floodprotection.style=Discard
 gui.animation=1
 
 # True if the keyboard (and event) layouts should be scaled to fit the screen rather than remaining a fixed size
-gui.autoscale=0
+gui.autoscale=1
 
 # Pressing ENTER or ESC in the MACRO EDIT screen will return to the MACRO BIND screen
 gui.bindafteredit=0
@@ -226,9 +226,6 @@ Macro[19].OnKeyUp=//rotate 90
 Macro[19].Condition=SHIFT
 Macro[19].Mode=conditional
 
-# KEY_T
-Macro[20].Macro=/toggledownfall
-
 # KEY_Y
 Macro[21].Macro=//redo
 Macro[21].Control=1
@@ -253,10 +250,6 @@ Macro[35].Mode=conditional
 Macro[36].Macro=//chunk|//regen
 Macro[36].Control=1
 
-# KEY_L
-Macro[38].Macro=$${$$m}$$
-Macro[38].File=away.txt
-
 # KEY_Z
 Macro[44].Macro=//undo
 Macro[44].Control=1
@@ -267,7 +260,7 @@ Macro[45].Control=1
 
 # KEY_C
 Macro[46].Macro=//copy
-Macro[46].OnKeyUp=$${IIF(MODE,/gm 0,/gm 1)}$$
+Macro[46].OnKeyUp=$${$$<cyclegm.txt>}$$
 Macro[46].Condition=CTRL
 Macro[46].Mode=conditional
 
@@ -283,11 +276,11 @@ Macro[48].OnKeyUp=$${IIF(SHIFT,"/butcher -f 10","/butcher 10")}$$
 Macro[48].Condition=CTRL
 Macro[48].Mode=conditional
 
-# KEY_M
-Macro[50].Macro=/time morning
-
 # KEY_LMENU
 Macro[56].Macro=/rocket -sh
+Macro[56].OnKeyUp=/rocket -s
+Macro[56].Condition=CTRL
+Macro[56].Mode=conditional
 
 # KEY_HOME
 Macro[199].Macro=//inset 10
@@ -325,7 +318,7 @@ Macro[211].Control=1
 
 # KEY_APPS
 Macro[221].Macro=$${$$m}$$
-Macro[221].File=weewee.txt
+Macro[221].File=flyspeed.txt
 Macro[221].NamedParam[regionname]=mr_loli_city
 
 # KEY_MWHEELUP
@@ -353,10 +346,6 @@ Macro[251].Macro=/thru
 Macro[251].OnKeyUp=//hpos2
 Macro[251].Condition=SHIFT
 Macro[251].Mode=conditional
-
-# KEY_MIDDLEMOUSE
-Macro[252].Macro=$$<cycleitems.txt>
-Macro[252].Control=1
 
 # KEY_MOUSE3
 Macro[253].Macro=/.
