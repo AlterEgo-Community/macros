@@ -323,14 +323,14 @@ Macro[221].NamedParam[regionname]=mr_loli_city
 
 # KEY_MWHEELUP
 Macro[248].Macro=/ascend
-Macro[248].OnKeyUp=$$<previtem.txt>
+Macro[248].OnKeyUp=$${$$<previtem.txt>}$$
 Macro[248].Condition=SHIFT
 Macro[248].Mode=conditional
 Macro[248].Control=1
 
 # KEY_MWHEELDOWN
 Macro[249].Macro=/descend
-Macro[249].OnKeyUp=$$<nextitem.txt>
+Macro[249].OnKeyUp=$${$$<nextitem.txt>}$$
 Macro[249].Condition=SHIFT
 Macro[249].Mode=conditional
 Macro[249].Control=1

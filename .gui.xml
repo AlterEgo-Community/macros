@@ -208,7 +208,7 @@
                 <text>Mode</text>
                 <visible>1</visible>
             </gc:label>
-            <gc:label colspan="3" id="283" name="LABEL 283" rowspan="0" x="0" y="9">
+            <gc:label colspan="3" id="283" name="LABEL 283" x="0" y="9">
                 <align>bottom centre</align>
                 <background>#015555FF</background>
                 <binding/>

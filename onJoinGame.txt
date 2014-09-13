@@ -11,7 +11,7 @@ WAIT(400t);
 &messages[4] = "Press C to cycle between game modes.";
 &messages[5] = "To show the button GUI press the key you set as your macro activate key.";
 &messages[6] = "Instead of the WorldEdit wand, use Ctrl+Left/right click.";
-&messages[7] = "Instead of the compass, user Ctrl+Shift+Left/right click.";
+&messages[7] = "Instead of the compass, use Ctrl+Shift+Left/right click.";
 &messages[8] = "Ctrl+Scroll wheel lets you scroll through handy tools in your currently selected hotbar slot.";
 &messages[9] = "Ctrl+history back on your mouse lets you repeat the last chat or button command.";
 &messages[10] = "You can use text editor shortcuts for the WorldEdit history and clipboard.";
@@ -24,7 +24,7 @@ WAIT(400t);
 &messages[17] = "Outset or inset your WorldEdit selection in all directions with Home and End. Ctrl for 10*"
 
 DO;
-    RANDOM(#message_index,16,0);
+    RANDOM(#message_index,17,0);
     LOGTO(ingameMessage,%&messages[%#message_index%]%);
     WAIT(60000ms);
 WHILE(1);
