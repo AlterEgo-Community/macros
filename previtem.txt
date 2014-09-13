@@ -1,6 +1,4 @@
-$${
-
-// Get the next item with a similar purpose
+// Get the previous item with a similar purpose
 // Logblock -> fire -> info -> cycler -> gunpowder -> arrow -> stick
 
 IF(ITEM="farmland");
@@ -18,5 +16,3 @@ ELSEIF(ITEM="arrow");
 ELSE;
     ECHO("/clear -s|/lb toolblock");
 ENDIF;
-
-}$$

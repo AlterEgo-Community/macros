@@ -11,494 +11,491 @@
     <!-- Config for layout 'default' -->
     <gc:guilayout columns="17" display="default" dots="false" grid="false" name="default" padding="2" rows="12">
         <gc:controls>
-            <gc:button colspan="2" id="257" name="BUTTON 257" x="1" y="10">
-                <background>B0000000</background>
-                <colour>FF00FF00</colour>
+            <gc:button colspan="2" id="257" name="Define region" x="1" y="10">
+                <background>#B0000000</background>
+                <colour>#0100FF00</colour>
                 <hide>1</hide>
                 <sticky>0</sticky>
-                <text>Define...</text>
+                <text>&amp;fDefine...</text>
                 <visible>1</visible>
             </gc:button>
-            <gc:button colspan="2" id="258" name="BUTTON 258" x="10" y="11">
-                <background>#B00000FF</background>
-                <colour>#00FF00</colour>
-                <hide>0</hide>
-                <sticky>0</sticky>
-                <text>Replace...</text>
-                <visible>1</visible>
-            </gc:button>
-            <gc:label colspan="8" id="259" name="LABEL 259" rowspan="3" x="9" y="6">
-                <align>bottom right</align>
-                <background>#01000000</background>
+            <gc:label colspan="2" id="258" name="LABEL 258" x="8" y="9">
+                <align>bottom centre</align>
+                <background>#01FF5555</background>
                 <binding/>
-                <colour>#00FF00</colour>
+                <colour>#FFFFFF</colour>
                 <shadow>1</shadow>
-                <text>Arrows/PgUP/PgDn: Expand selection\nShift+direction: Contract selection\nHold fire: Move blocks and selection\nCtrl+direction: Effect*10</text>
+                <text>Teleport</text>
                 <visible>1</visible>
             </gc:label>
             <gc:button id="260" name="BUTTON 260" x="7" y="10">
-                <background>#B0FFFF00</background>
-                <colour>#0000FF</colour>
+                <background>#B0000000</background>
+                <colour>#0100FF00</colour>
                 <hide>0</hide>
                 <sticky>0</sticky>
-                <text>Front...</text>
+                <text>&amp;fFront...</text>
                 <visible>1</visible>
             </gc:button>
-            <gc:label colspan="5" id="261" name="LABEL 261" x="5" y="9">
-                <align>middle centre</align>
-                <background>#AA0000FF</background>
+            <gc:label colspan="3" id="261" name="LABEL 261" x="5" y="9">
+                <align>bottom centre</align>
+                <background>#0155FFFF</background>
                 <binding/>
-                <colour>#AAFFFF00</colour>
+                <colour>#FFFFFF</colour>
                 <shadow>1</shadow>
-                <text>Go to</text>
+                <text>World</text>
                 <visible>1</visible>
             </gc:label>
             <gc:button colspan="2" id="262" name="BUTTON 262" x="14" y="10">
-                <background>B0000000</background>
-                <colour>FF00FF00</colour>
+                <background>#B0000000</background>
+                <colour>#0100FF00</colour>
                 <hide>0</hide>
                 <sticky>0</sticky>
-                <text>Monsters</text>
+                <text>&amp;fMonsters</text>
                 <visible>1</visible>
             </gc:button>
             <gc:button id="263" name="BUTTON 263" x="16" y="10">
-                <background>B0000000</background>
-                <colour>FF00FF00</colour>
+                <background>#B0000000</background>
+                <colour>#0100FF00</colour>
                 <hide>0</hide>
                 <sticky>0</sticky>
-                <text>100</text>
+                <text>&amp;f100</text>
                 <visible>1</visible>
             </gc:button>
             <gc:button id="264" name="BUTTON 264" x="6" y="10">
-                <background>#B0FFFF00</background>
-                <colour>#0000FF</colour>
+                <background>#B0000000</background>
+                <colour>#0100FF00</colour>
                 <hide>0</hide>
                 <sticky>0</sticky>
-                <text>World</text>
+                <text>&amp;fWorld</text>
                 <visible>1</visible>
             </gc:button>
             <gc:button id="265" name="BUTTON 265" x="5" y="10">
-                <background>#B0FFFF00</background>
-                <colour>#0000FF</colour>
+                <background>#B0000000</background>
+                <colour>#0100FF00</colour>
                 <hide>0</hide>
                 <sticky>0</sticky>
-                <text>Flat...</text>
+                <text>&amp;fFlat...</text>
                 <visible>1</visible>
             </gc:button>
             <gc:button id="266" name="BUTTON 266" x="6" y="11">
-                <background>#B0FFFF00</background>
-                <colour>#0000FF</colour>
+                <background>#B0000000</background>
+                <colour>#0100FF00</colour>
                 <hide>0</hide>
                 <sticky>0</sticky>
-                <text>Home</text>
+                <text>&amp;fHome</text>
                 <visible>1</visible>
             </gc:button>
-            <gc:button id="267" name="BUTTON 267" x="0" y="10">
-                <background>B0000000</background>
-                <colour>FF00FF00</colour>
+            <gc:button id="267" name="Redefine region" x="0" y="10">
+                <background>#B0000000</background>
+                <colour>#0100FF00</colour>
                 <hide>0</hide>
                 <sticky>0</sticky>
-                <text>Re-</text>
+                <text>&amp;fRe-</text>
                 <visible>1</visible>
             </gc:button>
             <gc:button id="268" name="BUTTON 268" x="5" y="11">
-                <background>#B0FFFF00</background>
-                <colour>#0000FF</colour>
+                <background>#B0000000</background>
+                <colour>#0100FF00</colour>
                 <hide>0</hide>
                 <sticky>0</sticky>
-                <text>Home</text>
+                <text>&amp;fHome</text>
                 <visible>1</visible>
             </gc:button>
             <gc:button colspan="2" id="269" name="BUTTON 269" x="14" y="11">
-                <background>B0000000</background>
-                <colour>FF00FF00</colour>
+                <background>#B0000000</background>
+                <colour>#0100FF00</colour>
                 <hide>0</hide>
                 <sticky>0</sticky>
-                <text>Friendly</text>
+                <text>&amp;fFriendly</text>
                 <visible>1</visible>
             </gc:button>
             <gc:button id="270" name="BUTTON 270" x="16" y="11">
-                <background>B0000000</background>
-                <colour>FF00FF00</colour>
+                <background>#B0000000</background>
+                <colour>#0100FF00</colour>
                 <hide>0</hide>
                 <sticky>0</sticky>
-                <text>100</text>
+                <text>&amp;f100</text>
                 <visible>1</visible>
             </gc:button>
             <gc:button colspan="2" id="271" name="BUTTON 271" x="12" y="10">
-                <background>#B0000000</background>
-                <colour>#00FF00</colour>
+                <background>#B0555555</background>
+                <colour>#0100FF00</colour>
                 <hide>0</hide>
                 <sticky>0</sticky>
-                <text>Gamemode</text>
+                <text>&amp;fGamemode</text>
                 <visible>1</visible>
             </gc:button>
             <gc:button colspan="2" id="272" name="BUTTON 272" x="3" y="10">
-                <background>#B0000000</background>
-                <colour>#00FF00</colour>
+                <background>#B0555555</background>
+                <colour>#0100FF00</colour>
                 <hide>0</hide>
                 <sticky>0</sticky>
-                <text>Sunny</text>
+                <text>&amp;fSunny</text>
                 <visible>1</visible>
             </gc:button>
             <gc:button colspan="2" id="273" name="BUTTON 273" x="3" y="11">
-                <background>#B0000000</background>
-                <colour>#00FF00</colour>
+                <background>#B0555555</background>
+                <colour>#0100FF00</colour>
                 <hide>0</hide>
                 <sticky>0</sticky>
-                <text>Morning</text>
+                <text>&amp;fMorning</text>
                 <visible>1</visible>
             </gc:button>
-            <gc:button id="274" name="BUTTON 274" x="15" y="0">
+            <gc:button colspan="2" id="274" name="BUTTON 274" x="10" y="10">
                 <background>#B0000000</background>
-                <colour>#00FF00</colour>
+                <colour>#0100FF00</colour>
                 <hide>0</hide>
                 <sticky>0</sticky>
-                <text>break</text>
+                <text>&amp;fbreak</text>
                 <visible>1</visible>
             </gc:button>
-            <gc:button id="275" name="BUTTON 275" x="16" y="0">
+            <gc:button colspan="2" id="275" name="BUTTON 275" x="10" y="11">
                 <background>#B0000000</background>
-                <colour>#00FF00</colour>
+                <colour>#0100FF00</colour>
                 <hide>0</hide>
                 <sticky>0</sticky>
-                <text>place</text>
+                <text>&amp;fplace</text>
                 <visible>1</visible>
             </gc:button>
             <gc:button colspan="2" id="276" name="BUTTON 276" x="12" y="11">
-                <background>B0000000</background>
-                <colour>FF00FF00</colour>
+                <background>#B0555555</background>
+                <colour>#0100FF00</colour>
                 <hide>0</hide>
                 <sticky>0</sticky>
-                <text>Vanish</text>
+                <text>&amp;fVanish</text>
                 <visible>1</visible>
             </gc:button>
             <gc:button colspan="2" id="277" name="BUTTON 277" x="1" y="11">
-                <background>B0000000</background>
-                <colour>FF00FF00</colour>
+                <background>#B0000000</background>
+                <colour>#0100FF00</colour>
                 <hide>0</hide>
                 <sticky>0</sticky>
-                <text>Select</text>
+                <text>&amp;fSelect</text>
                 <visible>1</visible>
             </gc:button>
             <gc:button id="278" name="BUTTON 278" x="0" y="11">
-                <background>B0000000</background>
-                <colour>FF00FF00</colour>
+                <background>#B0000000</background>
+                <colour>#0100FF00</colour>
                 <hide>0</hide>
                 <sticky>0</sticky>
-                <text>Info</text>
-                <visible>1</visible>
-            </gc:button>
-            <gc:button colspan="2" id="279" name="BUTTON 279" x="10" y="10">
-                <background>#B00000FF</background>
-                <colour>#00FF00</colour>
-                <hide>0</hide>
-                <sticky>0</sticky>
-                <text>Set...</text>
+                <text>&amp;fInfo</text>
                 <visible>1</visible>
             </gc:button>
             <gc:label colspan="3" id="280" name="LABEL 280" x="14" y="9">
                 <align>bottom centre</align>
-                <background>#AAFF0000</background>
+                <background>#01FFFFFF</background>
                 <binding/>
-                <colour>#0800FF</colour>
+                <colour>#FFFFFF</colour>
                 <shadow>1</shadow>
                 <text>Butcher</text>
                 <visible>1</visible>
             </gc:label>
             <gc:label colspan="2" id="281" name="LABEL 281" x="3" y="9">
                 <align>bottom centre</align>
-                <background>#AAFFFF00</background>
+                <background>#0155FF55</background>
                 <binding/>
-                <colour>#0000FF</colour>
+                <colour>#FFFFFF</colour>
                 <shadow>1</shadow>
                 <text>Envir.</text>
                 <visible>1</visible>
             </gc:label>
             <gc:label colspan="2" id="282" name="LABEL 282" x="12" y="9">
                 <align>bottom centre</align>
-                <background>#AA262626</background>
+                <background>#01FFFF55</background>
                 <binding/>
-                <colour>#00FF00</colour>
+                <colour>#FFFFFF</colour>
                 <shadow>1</shadow>
                 <text>Mode</text>
                 <visible>1</visible>
             </gc:label>
-            <gc:label colspan="3" id="283" name="LABEL 283" x="0" y="9">
+            <gc:label colspan="3" id="283" name="LABEL 283" rowspan="0" x="0" y="9">
                 <align>bottom centre</align>
-                <background>#AAA33600</background>
+                <background>#015555FF</background>
                 <binding/>
-                <colour>#008915</colour>
+                <colour>#FFFFFF</colour>
                 <shadow>1</shadow>
                 <text>Region</text>
                 <visible>1</visible>
             </gc:label>
-            <gc:label colspan="2" id="284" name="LABEL 284" x="10" y="9">
-                <align>bottom centre</align>
-                <background>#AA00FF00</background>
-                <binding/>
-                <colour>#FF00FF</colour>
-                <shadow>1</shadow>
-                <text>Selection</text>
-                <visible>1</visible>
-            </gc:label>
-            <gc:textarea colspan="8" id="285" name="buttonsMessage" rowspan="2" x="9" y="4">
-                <colour>#00FF00</colour>
-                <lifespan>200</lifespan>
-                <visible>1</visible>
-            </gc:textarea>
             <gc:button id="286" name="BUTTON 286" x="7" y="11">
-                <background>#B0FFFF00</background>
-                <colour>#0000FF</colour>
+                <background>#B0000000</background>
+                <colour>#0100FF00</colour>
                 <hide>0</hide>
                 <sticky>0</sticky>
-                <text>Home</text>
+                <text>&amp;fHome</text>
                 <visible>1</visible>
             </gc:button>
-            <gc:label id="287" name="LABEL 287" x="14" y="0">
+            <gc:label colspan="2" id="287" name="LABEL 287" x="10" y="9">
                 <align>bottom centre</align>
-                <background>#AA00FFFF</background>
+                <background>#01FF55FF</background>
                 <binding/>
-                <colour>#FF0000</colour>
+                <colour>#FFFFFF</colour>
                 <shadow>1</shadow>
                 <text>Fast</text>
                 <visible>1</visible>
             </gc:label>
             <gc:button id="294" name="BUTTON 294" x="9" y="10">
-                <background>#B0000000</background>
-                <colour>#00FF00</colour>
+                <background>#B0555555</background>
+                <colour>#0100FF00</colour>
                 <hide>0</hide>
                 <sticky>0</sticky>
-                <text>Player</text>
+                <text>&amp;fPlayer</text>
                 <visible>1</visible>
             </gc:button>
             <gc:button id="315" name="BUTTON 315" x="8" y="10">
-                <background>#B0000000</background>
-                <colour>#00FF00</colour>
+                <background>#B0555555</background>
+                <colour>#0100FF00</colour>
                 <hide>0</hide>
                 <sticky>0</sticky>
-                <text>Call</text>
+                <text>&amp;fCall</text>
                 <visible>1</visible>
             </gc:button>
             <gc:button colspan="2" id="316" name="BUTTON 316" x="8" y="11">
-                <background>#B0000000</background>
-                <colour>#00FF00</colour>
+                <background>#B0555555</background>
+                <colour>#0100FF00</colour>
                 <hide>0</hide>
                 <sticky>0</sticky>
-                <text>Place</text>
+                <text>&amp;fPlace</text>
                 <visible>1</visible>
             </gc:button>
         </gc:controls>
     </gc:guilayout>
     <!-- Config for layout 'inchat' -->
-    <gc:guilayout columns="10" display="inchat" dots="false" grid="false" name="inchat" padding="2" rows="12">
+    <gc:guilayout columns="10" display="inchat" dots="false" grid="false" name="inchat" padding="2" rows="11">
         <gc:controls>
-            <gc:button id="288" name="BUTTON 288" x="8" y="10">
-                <background>B0000000</background>
-                <colour>FF00FF00</colour>
+            <gc:label colspan="6" id="259" name="LABEL 259" x="0" y="1">
+                <align>top centre</align>
+                <background>#01000000</background>
+                <binding/>
+                <colour>#FFFFFF</colour>
+                <shadow>1</shadow>
+                <text>Text formatting</text>
+                <visible>1</visible>
+            </gc:label>
+            <gc:label colspan="4" id="279" name="LABEL 279" x="6" y="1">
+                <align>top centre</align>
+                <background>#01000000</background>
+                <binding/>
+                <colour>#FFFFFF</colour>
+                <shadow>1</shadow>
+                <text>Chat actions</text>
+                <visible>1</visible>
+            </gc:label>
+            <gc:label colspan="2" id="284" name="LABEL 284" x="8" y="2">
+                <align>bottom centre</align>
+                <background>#01000000</background>
+                <binding/>
+                <colour>#FFFFFF</colour>
+                <shadow>1</shadow>
+                <text>Text colors</text>
+                <visible>1</visible>
+            </gc:label>
+            <gc:button id="288" name="BUTTON 288" x="6" y="0">
+                <background>#B0555555</background>
+                <colour>#0100FF00</colour>
                 <hide>0</hide>
                 <sticky>0</sticky>
-                <text>PM...</text>
+                <text>&amp;fPM...</text>
                 <visible>1</visible>
             </gc:button>
-            <gc:button id="289" name="BUTTON 289" x="9" y="11">
-                <background>B0000000</background>
-                <colour>FF00FF00</colour>
+            <gc:button id="289" name="BUTTON 289" x="9" y="0">
+                <background>#B0555555</background>
+                <colour>#0100FF00</colour>
                 <hide>0</hide>
                 <sticky>0</sticky>
-                <text>Broadcast</text>
+                <text>&amp;fBroadcast</text>
                 <visible>1</visible>
             </gc:button>
-            <gc:button id="290" name="BUTTON 290" x="9" y="10">
-                <background>B0000000</background>
-                <colour>FF00FF00</colour>
+            <gc:button id="290" name="BUTTON 290" x="7" y="0">
+                <background>#B0555555</background>
+                <colour>#0100FF00</colour>
                 <hide>0</hide>
                 <sticky>0</sticky>
-                <text>Reply</text>
+                <text>&amp;fReply</text>
                 <visible>1</visible>
             </gc:button>
-            <gc:button id="291" name="BUTTON 291" x="8" y="11">
-                <background>B0000000</background>
-                <colour>FF00FF00</colour>
+            <gc:button id="291" name="BUTTON 291" x="8" y="0">
+                <background>#B0555555</background>
+                <colour>#0100FF00</colour>
                 <hide>0</hide>
                 <sticky>0</sticky>
-                <text>Me</text>
+                <text>&amp;fMe</text>
                 <visible>1</visible>
             </gc:button>
-            <gc:button id="292" name="BUTTON 292" x="0" y="0">
+            <gc:button id="292" name="BUTTON 292" x="8" y="3">
+                <background>#000000</background>
+                <colour>#0100FF00</colour>
+                <hide>0</hide>
+                <sticky>0</sticky>
+                <text>&amp;fBlack 0</text>
+                <visible>1</visible>
+            </gc:button>
+            <gc:button id="293" name="BUTTON 293" x="8" y="4">
+                <background>#0000AA</background>
+                <colour>#0100FF00</colour>
+                <hide>0</hide>
+                <sticky>0</sticky>
+                <text>&amp;fBlue 1</text>
+                <visible>1</visible>
+            </gc:button>
+            <gc:button id="295" name="BUTTON 295" x="8" y="5">
+                <background>#00AA00</background>
+                <colour>#0100FF00</colour>
+                <hide>0</hide>
+                <sticky>0</sticky>
+                <text>&amp;fDark Green 2</text>
+                <visible>1</visible>
+            </gc:button>
+            <gc:button id="296" name="BUTTON 296" x="8" y="6">
+                <background>#00AAAA</background>
+                <colour>#0100FF00</colour>
+                <hide>0</hide>
+                <sticky>0</sticky>
+                <text>&amp;fDark Aqua 3</text>
+                <visible>1</visible>
+            </gc:button>
+            <gc:button id="297" name="BUTTON 297" x="8" y="7">
+                <background>#AA0000</background>
+                <colour>#0100FF00</colour>
+                <hide>0</hide>
+                <sticky>0</sticky>
+                <text>&amp;fDark Red 4</text>
+                <visible>1</visible>
+            </gc:button>
+            <gc:button id="298" name="BUTTON 298" x="8" y="8">
+                <background>#AA00AA</background>
+                <colour>#0100FF00</colour>
+                <hide>0</hide>
+                <sticky>0</sticky>
+                <text>&amp;fPurple 5</text>
+                <visible>1</visible>
+            </gc:button>
+            <gc:button id="299" name="BUTTON 299" x="8" y="9">
+                <background>#FFAA00</background>
+                <colour>#0100FF00</colour>
+                <hide>0</hide>
+                <sticky>0</sticky>
+                <text>&amp;fGold 6</text>
+                <visible>1</visible>
+            </gc:button>
+            <gc:button id="300" name="BUTTON 300" x="8" y="10">
+                <background>#AAAAAA</background>
+                <colour>#0100FF00</colour>
+                <hide>0</hide>
+                <sticky>0</sticky>
+                <text>&amp;fGray 7</text>
+                <visible>1</visible>
+            </gc:button>
+            <gc:button id="301" name="BUTTON 301" x="9" y="3">
+                <background>#555555</background>
+                <colour>#0100FF00</colour>
+                <hide>0</hide>
+                <sticky>0</sticky>
+                <text>&amp;fDark Gray 8</text>
+                <visible>1</visible>
+            </gc:button>
+            <gc:button id="302" name="BUTTON 302" x="9" y="4">
+                <background>#5555FF</background>
+                <colour>#0100FF00</colour>
+                <hide>0</hide>
+                <sticky>0</sticky>
+                <text>&amp;fIndigo 9</text>
+                <visible>1</visible>
+            </gc:button>
+            <gc:button id="303" name="BUTTON 303" x="9" y="5">
+                <background>#55FF55</background>
+                <colour>#0100FF00</colour>
+                <hide>0</hide>
+                <sticky>0</sticky>
+                <text>&amp;fBright Green a</text>
+                <visible>1</visible>
+            </gc:button>
+            <gc:button id="304" name="BUTTON 304" x="9" y="6">
+                <background>#55FFFF</background>
+                <colour>#0100FF00</colour>
+                <hide>0</hide>
+                <sticky>0</sticky>
+                <text>&amp;0Aqua b</text>
+                <visible>1</visible>
+            </gc:button>
+            <gc:button id="305" name="BUTTON 305" x="9" y="7">
+                <background>#FF5555</background>
+                <colour>#0100FF00</colour>
+                <hide>0</hide>
+                <sticky>0</sticky>
+                <text>&amp;fRed c</text>
+                <visible>1</visible>
+            </gc:button>
+            <gc:button id="306" name="BUTTON 306" x="9" y="8">
+                <background>#FF55FF</background>
+                <colour>#0100FF00</colour>
+                <hide>0</hide>
+                <sticky>0</sticky>
+                <text>&amp;fPink d</text>
+                <visible>1</visible>
+            </gc:button>
+            <gc:button id="307" name="BUTTON 307" x="9" y="9">
+                <background>#FFFF55</background>
+                <colour>#0100FF00</colour>
+                <hide>0</hide>
+                <sticky>0</sticky>
+                <text>&amp;0Yellow e</text>
+                <visible>1</visible>
+            </gc:button>
+            <gc:button id="308" name="BUTTON 308" x="9" y="10">
+                <background>#FFFFFF</background>
+                <colour>#0100FF00</colour>
+                <hide>0</hide>
+                <sticky>0</sticky>
+                <text>&amp;0White f</text>
+                <visible>1</visible>
+            </gc:button>
+            <gc:button id="309" name="BUTTON 309" x="0" y="0">
                 <background>#B0000000</background>
-                <colour>#00FF00</colour>
+                <colour>#0100FF00</colour>
                 <hide>0</hide>
                 <sticky>0</sticky>
-                <text>&amp;0Black &amp;f0</text>
+                <text>&amp;f&amp;ka &amp;r&amp;fk</text>
                 <visible>1</visible>
             </gc:button>
-            <gc:button id="293" name="BUTTON 293" x="1" y="0">
+            <gc:button id="310" name="BUTTON 310" x="2" y="0">
                 <background>#B0000000</background>
-                <colour>#00FF00</colour>
+                <colour>#0100FF00</colour>
                 <hide>0</hide>
                 <sticky>0</sticky>
-                <text>&amp;1Blue 1</text>
+                <text>&amp;f&amp;lB &amp;r&amp;fl</text>
                 <visible>1</visible>
             </gc:button>
-            <gc:button id="295" name="BUTTON 295" x="2" y="0">
+            <gc:button id="311" name="BUTTON 311" x="1" y="0">
                 <background>#B0000000</background>
-                <colour>#00FF00</colour>
+                <colour>#0100FF00</colour>
                 <hide>0</hide>
                 <sticky>0</sticky>
-                <text>&amp;2Dark Green 2</text>
+                <text>&amp;f&amp;mS&amp;r &amp;fm</text>
                 <visible>1</visible>
             </gc:button>
-            <gc:button id="296" name="BUTTON 296" x="3" y="0">
+            <gc:button id="312" name="BUTTON 312" x="4" y="0">
                 <background>#B0000000</background>
-                <colour>#00FF00</colour>
+                <colour>#0100FF00</colour>
                 <hide>0</hide>
                 <sticky>0</sticky>
-                <text>&amp;3Dark Aqua 3</text>
+                <text>&amp;f&amp;nU&amp;r &amp;fn</text>
                 <visible>1</visible>
             </gc:button>
-            <gc:button id="297" name="BUTTON 297" x="4" y="0">
+            <gc:button id="313" name="BUTTON 313" x="3" y="0">
                 <background>#B0000000</background>
-                <colour>#00FF00</colour>
+                <colour>#0100FF00</colour>
                 <hide>0</hide>
                 <sticky>0</sticky>
-                <text>&amp;4Dark Red 4</text>
+                <text>&amp;f&amp;oI &amp;r&amp;fo</text>
                 <visible>1</visible>
             </gc:button>
-            <gc:button id="298" name="BUTTON 298" x="5" y="0">
+            <gc:button id="314" name="BUTTON 314" x="5" y="0">
                 <background>#B0000000</background>
-                <colour>#00FF00</colour>
+                <colour>#0100FF00</colour>
                 <hide>0</hide>
                 <sticky>0</sticky>
-                <text>&amp;5Purple 5</text>
-                <visible>1</visible>
-            </gc:button>
-            <gc:button id="299" name="BUTTON 299" x="6" y="0">
-                <background>#B0000000</background>
-                <colour>#00FF00</colour>
-                <hide>0</hide>
-                <sticky>0</sticky>
-                <text>&amp;6Gold 6</text>
-                <visible>1</visible>
-            </gc:button>
-            <gc:button id="300" name="BUTTON 300" x="7" y="0">
-                <background>#B0000000</background>
-                <colour>#00FF00</colour>
-                <hide>0</hide>
-                <sticky>0</sticky>
-                <text>&amp;7Gray 7</text>
-                <visible>1</visible>
-            </gc:button>
-            <gc:button id="301" name="BUTTON 301" x="0" y="1">
-                <background>#B0000000</background>
-                <colour>#00FF00</colour>
-                <hide>0</hide>
-                <sticky>0</sticky>
-                <text>&amp;8Dark Gray 8</text>
-                <visible>1</visible>
-            </gc:button>
-            <gc:button id="302" name="BUTTON 302" x="1" y="1">
-                <background>#B0000000</background>
-                <colour>#00FF00</colour>
-                <hide>0</hide>
-                <sticky>0</sticky>
-                <text>&amp;9Indigo 9</text>
-                <visible>1</visible>
-            </gc:button>
-            <gc:button id="303" name="BUTTON 303" x="2" y="1">
-                <background>#B0000000</background>
-                <colour>#00FF00</colour>
-                <hide>0</hide>
-                <sticky>0</sticky>
-                <text>&amp;aBright Green a</text>
-                <visible>1</visible>
-            </gc:button>
-            <gc:button id="304" name="BUTTON 304" x="3" y="1">
-                <background>#B0000000</background>
-                <colour>#00FF00</colour>
-                <hide>0</hide>
-                <sticky>0</sticky>
-                <text>&amp;bAqua b</text>
-                <visible>1</visible>
-            </gc:button>
-            <gc:button id="305" name="BUTTON 305" x="4" y="1">
-                <background>#B0000000</background>
-                <colour>#00FF00</colour>
-                <hide>0</hide>
-                <sticky>0</sticky>
-                <text>&amp;cRed c</text>
-                <visible>1</visible>
-            </gc:button>
-            <gc:button id="306" name="BUTTON 306" x="5" y="1">
-                <background>#B0000000</background>
-                <colour>#00FF00</colour>
-                <hide>0</hide>
-                <sticky>0</sticky>
-                <text>&amp;dPink d</text>
-                <visible>1</visible>
-            </gc:button>
-            <gc:button id="307" name="BUTTON 307" x="6" y="1">
-                <background>#B0000000</background>
-                <colour>#00FF00</colour>
-                <hide>0</hide>
-                <sticky>0</sticky>
-                <text>&amp;eYellow e</text>
-                <visible>1</visible>
-            </gc:button>
-            <gc:button id="308" name="BUTTON 308" x="7" y="1">
-                <background>#B0000000</background>
-                <colour>#00FF00</colour>
-                <hide>0</hide>
-                <sticky>0</sticky>
-                <text>&amp;fWhite f</text>
-                <visible>1</visible>
-            </gc:button>
-            <gc:button id="309" name="BUTTON 309" x="8" y="6">
-                <background>#B0000000</background>
-                <colour>#00FF00</colour>
-                <hide>0</hide>
-                <sticky>0</sticky>
-                <text>&amp;ka &amp;rk</text>
-                <visible>1</visible>
-            </gc:button>
-            <gc:button id="310" name="BUTTON 310" x="8" y="7">
-                <background>#B0000000</background>
-                <colour>#00FF00</colour>
-                <hide>0</hide>
-                <sticky>0</sticky>
-                <text>&amp;lB &amp;rl</text>
-                <visible>1</visible>
-            </gc:button>
-            <gc:button id="311" name="BUTTON 311" x="9" y="6">
-                <background>#B0000000</background>
-                <colour>#00FF00</colour>
-                <hide>0</hide>
-                <sticky>0</sticky>
-                <text>&amp;mS&amp;r m</text>
-                <visible>1</visible>
-            </gc:button>
-            <gc:button id="312" name="BUTTON 312" x="8" y="8">
-                <background>#B0000000</background>
-                <colour>#00FF00</colour>
-                <hide>0</hide>
-                <sticky>0</sticky>
-                <text>&amp;nU&amp;r n</text>
-                <visible>1</visible>
-            </gc:button>
-            <gc:button id="313" name="BUTTON 313" x="9" y="7">
-                <background>#B0000000</background>
-                <colour>#00FF00</colour>
-                <hide>0</hide>
-                <sticky>0</sticky>
-                <text>&amp;oI &amp;ro</text>
-                <visible>1</visible>
-            </gc:button>
-            <gc:button id="314" name="BUTTON 314" x="9" y="8">
-                <background>#B0000000</background>
-                <colour>#00FF00</colour>
-                <hide>0</hide>
-                <sticky>0</sticky>
-                <text>&amp;c&amp;oRes&amp;ret r</text>
+                <text>&amp;f&amp;oRes&amp;ret &amp;fr</text>
                 <visible>1</visible>
             </gc:button>
         </gc:controls>

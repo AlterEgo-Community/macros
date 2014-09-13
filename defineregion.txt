@@ -1,7 +1,7 @@
-$${IF(CTRL);ECHO("//expand vert");ENDIF;}$$
+IF(CTRL);ECHO("//expand vert");ENDIF;$${
 /rg define $$[regionname] $$u|
 /rg flag $$[regionname] creeper-explosion deny|
 /rg flag $$[regionname] enderman-grief deny|
 /rg flag $$[regionname] teleport here|
 /me protected $$[regionname] for $$u|
-/broadcast $$u may teleport to it with /rg tp $$[regionname]
+/broadcast $$u may teleport to it with /rg tp $$[regionname]}$$

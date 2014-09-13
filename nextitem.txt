@@ -1,5 +1,3 @@
-$${
-
 // Get the next item with a similar purpose
 // Fire -> logblock -> stick -> arrow -> gunpowder -> cycler -> info
 
@@ -18,5 +16,3 @@ ELSEIF(ITEM="clock");
 ELSE;
     ECHO("/clear -s|/i fire");
 ENDIF;
-
-}$$

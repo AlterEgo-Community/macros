@@ -351,13 +351,9 @@ Macro[251].Mode=conditional
 Macro[253].Macro=/.
 Macro[253].Control=1
 
-# CONTROL_BUTTON 257
-Macro[257].Macro=$$<defineregion.txt>
+# CONTROL_DEFINE REGION
+Macro[257].Macro=$${$$<defineregion.txt>}$$
 Macro[257].NamedParam[regionname]=Snowforts
-
-# CONTROL_BUTTON 258
-Macro[258].Macro=//replace air $$i
-Macro[258].Item=20
 
 # CONTROL_BUTTON 260
 Macro[260].Macro=/mvtp front_world
@@ -377,7 +373,7 @@ Macro[265].Macro=/mvtp flatlands
 # CONTROL_BUTTON 266
 Macro[266].Macro=/mvtp world|/home
 
-# CONTROL_BUTTON 267
+# CONTROL_REDEFINE REGION
 Macro[267].Macro=/rg redefine $$[regionname]
 Macro[267].NamedParam[regionname]=jacks_houses
 
@@ -391,10 +387,9 @@ Macro[269].Macro=/butcher -f 10
 Macro[270].Macro=/butcher -f 100
 
 # CONTROL_BUTTON 271
-Macro[271].Macro=/gm 0
+Macro[271].Macro=$${$$<cyclegm.txt>}$$
 Macro[271].OnKeyUp=/gm 1
 Macro[271].Condition=MODE = 1
-Macro[271].Mode=conditional
 
 # CONTROL_BUTTON 272
 Macro[272].Macro=/weather sunny -1 world|/weather sunny -1 front_world|/weather sunny -1 flat_world
@@ -416,10 +411,6 @@ Macro[277].Macro=/rg s
 
 # CONTROL_BUTTON 278
 Macro[278].Macro=/rg i
-
-# CONTROL_BUTTON 279
-Macro[279].Macro=//set $$i:d
-Macro[279].Item=2
 
 # CONTROL_BUTTON 286
 Macro[286].Macro=/mvtp front_world|/home
@@ -507,6 +498,9 @@ Macro[314].Macro=&r$$!
 
 # CONTROL_BUTTON 315
 Macro[315].Macro=/call $$u
+
+# CONTROL_BUTTON 316
+Macro[316].Macro=/tp $$px $$py $$pz
 
 # EVENT_ONJOINGAME
 Macro[1000].Macro=$${$$<onJoinGame.txt>}$$
