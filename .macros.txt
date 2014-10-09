@@ -220,6 +220,16 @@ script.warn.permissions.enabled=0
 # Macros
 #
 
+# KEY_BACK
+Macro[14].Macro=/return
+
+# KEY_TAB
+Macro[15].Macro=$${CONFIG("");LOGTO(ingameMessage,"WorldEdit mode enabled!");}$$
+Macro[15].OnKeyUp=$${CONFIG(Text editing);LOGTO(ingameMessage,"Text editing mode enabled!");}$$
+Macro[15].Condition=CONFIG = "Text editing"
+Macro[15].Mode=conditional
+Macro[15].Global=1
+
 # KEY_R
 Macro[19].Macro=//rotate -90
 Macro[19].OnKeyUp=//rotate 90
@@ -353,7 +363,7 @@ Macro[253].Control=1
 
 # CONTROL_DEFINE REGION
 Macro[257].Macro=$${$$<defineregion.txt>}$$
-Macro[257].NamedParam[regionname]=Snowforts
+Macro[257].NamedParam[regionname]=OkPim_house
 
 # CONTROL_BUTTON 260
 Macro[260].Macro=/mvtp front_world
@@ -510,4 +520,762 @@ Macro[1001].Macro=$${SET(@lastmessage, %CHATCLEAN%);}$$
 
 # EVENT_ONWORLDCHANGE
 Macro[1005].Macro=$${$$<fly.txt>}$$
+
+
+DIRECTIVE BEGINCONFIG() Text editing
+
+# KEY_ESCAPE
+Macro[1].Macro=
+Macro[1].Condition=TRUE
+
+# KEY_1
+Macro[2].Macro=
+Macro[2].Condition=TRUE
+
+# KEY_2
+Macro[3].Macro=
+Macro[3].Condition=TRUE
+
+# KEY_3
+Macro[4].Macro=
+Macro[4].Condition=TRUE
+
+# KEY_4
+Macro[5].Macro=
+Macro[5].Condition=TRUE
+
+# KEY_5
+Macro[6].Macro=
+Macro[6].Condition=TRUE
+
+# KEY_6
+Macro[7].Macro=
+Macro[7].Condition=TRUE
+
+# KEY_7
+Macro[8].Macro=
+Macro[8].Condition=TRUE
+
+# KEY_8
+Macro[9].Macro=
+Macro[9].Condition=TRUE
+
+# KEY_9
+Macro[10].Macro=
+Macro[10].Condition=TRUE
+
+# KEY_0
+Macro[11].Macro=
+Macro[11].Condition=TRUE
+
+# KEY_MINUS
+Macro[12].Macro=
+Macro[12].Condition=TRUE
+
+# KEY_EQUALS
+Macro[13].Macro=
+Macro[13].Condition=TRUE
+
+# KEY_BACK
+Macro[14].Macro=/return
+Macro[14].Condition=TRUE
+
+# KEY_Q
+Macro[16].Macro=
+Macro[16].Condition=TRUE
+
+# KEY_W
+Macro[17].Macro=
+Macro[17].Condition=TRUE
+
+# KEY_E
+Macro[18].Macro=
+Macro[18].Condition=TRUE
+
+# KEY_R
+Macro[19].Macro=//rotate -90
+Macro[19].OnKeyUp=//rotate 90
+Macro[19].Condition=SHIFT
+Macro[19].Mode=conditional
+
+# KEY_T
+Macro[20].Macro=
+Macro[20].Condition=TRUE
+
+# KEY_Y
+Macro[21].Macro=//redo
+Macro[21].Condition=TRUE
+Macro[21].Control=1
+
+# KEY_U
+Macro[22].Macro=/u 10
+Macro[22].OnKeyUp=/u
+Macro[22].Condition=SHIFT
+Macro[22].Mode=conditional
+Macro[22].Control=1
+
+# KEY_I
+Macro[23].Macro=
+Macro[23].Condition=TRUE
+
+# KEY_O
+Macro[24].Macro=
+Macro[24].Condition=TRUE
+
+# KEY_P
+Macro[25].Macro=
+Macro[25].Condition=TRUE
+
+# KEY_LBRACKET
+Macro[26].Macro=
+Macro[26].Condition=TRUE
+
+# KEY_RBRACKET
+Macro[27].Macro=
+Macro[27].Condition=TRUE
+
+# KEY_RETURN
+Macro[28].Macro=$${WAIT(250ms);GUI(chat);}$$
+Macro[28].Condition=TRUE
+
+# KEY_LCONTROL
+Macro[29].Macro=
+Macro[29].Condition=TRUE
+
+# KEY_A
+Macro[30].Macro=
+Macro[30].Condition=TRUE
+
+# KEY_S
+Macro[31].Macro=
+Macro[31].Condition=TRUE
+
+# KEY_D
+Macro[32].Macro=
+Macro[32].Condition=TRUE
+
+# KEY_F
+Macro[33].Macro=
+Macro[33].Condition=TRUE
+
+# KEY_G
+Macro[34].Macro=
+Macro[34].Condition=TRUE
+
+# KEY_H
+Macro[35].Macro=/mvtp world|/home
+Macro[35].OnKeyUp=/mvtp flatlands|/home
+Macro[35].Condition=CTRL
+Macro[35].Mode=conditional
+
+# KEY_J
+Macro[36].Macro=//chunk|//regen
+Macro[36].Condition=TRUE
+Macro[36].Control=1
+
+# KEY_K
+Macro[37].Macro=
+Macro[37].Condition=TRUE
+
+# KEY_L
+Macro[38].Macro=
+Macro[38].Condition=TRUE
+
+# KEY_SEMICOLON
+Macro[39].Macro=
+Macro[39].Condition=TRUE
+
+# KEY_APOSTROPHE
+Macro[40].Macro=
+Macro[40].Condition=TRUE
+
+# KEY_GRAVE
+Macro[41].Macro=
+Macro[41].Condition=TRUE
+
+# KEY_LSHIFT
+Macro[42].Macro=
+Macro[42].Condition=TRUE
+
+# KEY_BACKSLASH
+Macro[43].Macro=
+Macro[43].Condition=TRUE
+
+# KEY_Z
+Macro[44].Macro=//undo
+Macro[44].Condition=TRUE
+Macro[44].Control=1
+
+# KEY_B
+Macro[48].Macro=$${IIF(SHIFT,"/butcher -f 100","/butcher 100")}$$
+Macro[48].OnKeyUp=$${IIF(SHIFT,"/butcher -f 10","/butcher 10")}$$
+Macro[48].Condition=CTRL
+Macro[48].Mode=conditional
+
+# KEY_N
+Macro[49].Macro=
+Macro[49].Condition=TRUE
+
+# KEY_M
+Macro[50].Macro=
+Macro[50].Condition=TRUE
+
+# KEY_COMMA
+Macro[51].Macro=
+Macro[51].Condition=TRUE
+
+# KEY_PERIOD
+Macro[52].Macro=
+Macro[52].Condition=TRUE
+
+# KEY_SLASH
+Macro[53].Macro=
+Macro[53].Condition=TRUE
+
+# KEY_RSHIFT
+Macro[54].Macro=
+Macro[54].Condition=TRUE
+
+# KEY_MULTIPLY
+Macro[55].Macro=
+Macro[55].Condition=TRUE
+
+# KEY_LMENU
+Macro[56].Macro=/rocket -sh
+Macro[56].OnKeyUp=/rocket -s
+Macro[56].Condition=CTRL
+Macro[56].Mode=conditional
+
+# KEY_SPACE
+Macro[57].Macro=
+Macro[57].Condition=TRUE
+
+# KEY_CAPITAL
+Macro[58].Macro=
+Macro[58].Condition=TRUE
+
+# KEY_F1
+Macro[59].Macro=
+Macro[59].Condition=TRUE
+
+# KEY_F2
+Macro[60].Macro=
+Macro[60].Condition=TRUE
+
+# KEY_F3
+Macro[61].Macro=
+Macro[61].Condition=TRUE
+
+# KEY_F4
+Macro[62].Macro=
+Macro[62].Condition=TRUE
+
+# KEY_F5
+Macro[63].Macro=
+Macro[63].Condition=TRUE
+
+# KEY_F6
+Macro[64].Macro=
+Macro[64].Condition=TRUE
+
+# KEY_F7
+Macro[65].Macro=
+Macro[65].Condition=TRUE
+
+# KEY_F8
+Macro[66].Macro=
+Macro[66].Condition=TRUE
+
+# KEY_F9
+Macro[67].Macro=
+Macro[67].Condition=TRUE
+
+# KEY_F10
+Macro[68].Macro=
+Macro[68].Condition=TRUE
+
+# KEY_NUMLOCK
+Macro[69].Macro=
+Macro[69].Condition=TRUE
+
+# KEY_SCROLL
+Macro[70].Macro=
+Macro[70].Condition=TRUE
+
+# KEY_NUMPAD7
+Macro[71].Macro=
+Macro[71].Condition=TRUE
+
+# KEY_NUMPAD8
+Macro[72].Macro=
+Macro[72].Condition=TRUE
+
+# KEY_NUMPAD9
+Macro[73].Macro=
+Macro[73].Condition=TRUE
+
+# KEY_SUBTRACT
+Macro[74].Macro=
+Macro[74].Condition=TRUE
+
+# KEY_NUMPAD4
+Macro[75].Macro=
+Macro[75].Condition=TRUE
+
+# KEY_NUMPAD5
+Macro[76].Macro=
+Macro[76].Condition=TRUE
+
+# KEY_NUMPAD6
+Macro[77].Macro=
+Macro[77].Condition=TRUE
+
+# KEY_ADD
+Macro[78].Macro=
+Macro[78].Condition=TRUE
+
+# KEY_NUMPAD1
+Macro[79].Macro=
+Macro[79].Condition=TRUE
+
+# KEY_NUMPAD2
+Macro[80].Macro=
+Macro[80].Condition=TRUE
+
+# KEY_NUMPAD3
+Macro[81].Macro=
+Macro[81].Condition=TRUE
+
+# KEY_NUMPAD0
+Macro[82].Macro=
+Macro[82].Condition=TRUE
+
+# KEY_DECIMAL
+Macro[83].Macro=
+Macro[83].Condition=TRUE
+
+# KEY_F11
+Macro[87].Macro=
+Macro[87].Condition=TRUE
+
+# KEY_F12
+Macro[88].Macro=
+Macro[88].Condition=TRUE
+
+# KEY_NUMPADENTER
+Macro[156].Macro=
+Macro[156].Condition=TRUE
+
+# KEY_RCONTROL
+Macro[157].Macro=
+Macro[157].Condition=TRUE
+
+# KEY_DIVIDE
+Macro[181].Macro=
+Macro[181].Condition=TRUE
+
+# KEY_SYSRQ
+Macro[183].Macro=
+Macro[183].Condition=TRUE
+
+# KEY_RMENU
+Macro[184].Macro=
+Macro[184].Condition=TRUE
+
+# KEY_PAUSE
+Macro[197].Macro=
+Macro[197].Condition=TRUE
+
+# KEY_HOME
+Macro[199].Macro=//inset 10
+Macro[199].OnKeyUp=//inset 1
+Macro[199].Condition=CTRL
+Macro[199].Mode=conditional
+
+# KEY_UP
+Macro[200].Macro=$${$$<forward.txt>}$$
+Macro[200].Condition=TRUE
+
+# KEY_PRIOR
+Macro[201].Macro=$${$$<up.txt>}$$
+Macro[201].Condition=TRUE
+
+# KEY_END
+Macro[207].Macro=//outset 10
+Macro[207].OnKeyUp=//outset 1
+Macro[207].Condition=CTRL
+Macro[207].Mode=conditional
+
+# KEY_DOWN
+Macro[208].Macro=$${$$<back.txt>}$$
+Macro[208].Condition=TRUE
+
+# KEY_NEXT
+Macro[209].Macro=$${$$<down.txt>}$$
+Macro[209].Condition=TRUE
+
+# KEY_INSERT
+Macro[210].Macro=
+Macro[210].Condition=TRUE
+
+# KEY_DELETE
+Macro[211].Macro=//set 0
+Macro[211].Condition=TRUE
+Macro[211].Control=1
+
+# KEY_LMETA
+Macro[219].Macro=
+Macro[219].Condition=TRUE
+
+# KEY_RMETA
+Macro[220].Macro=
+Macro[220].Condition=TRUE
+
+# KEY_APPS
+Macro[221].Macro=$${$$m}$$
+Macro[221].Condition=TRUE
+
+# KEY_MWHEELUP
+Macro[248].Macro=/ascend
+Macro[248].OnKeyUp=$${$$<previtem.txt>}$$
+Macro[248].Condition=SHIFT
+Macro[248].Mode=conditional
+Macro[248].Control=1
+
+# KEY_MWHEELDOWN
+Macro[249].Macro=/descend
+Macro[249].OnKeyUp=$${$$<nextitem.txt>}$$
+Macro[249].Condition=SHIFT
+Macro[249].Mode=conditional
+Macro[249].Control=1
+
+# KEY_LMOUSE
+Macro[250].Macro=/jumpto
+Macro[250].OnKeyUp=//hpos1
+Macro[250].Condition=SHIFT
+Macro[250].Mode=conditional
+
+# KEY_RMOUSE
+Macro[251].Macro=/thru
+Macro[251].OnKeyUp=//hpos2
+Macro[251].Condition=SHIFT
+Macro[251].Mode=conditional
+
+# KEY_MIDDLEMOUSE
+Macro[252].Macro=
+Macro[252].Condition=TRUE
+
+# KEY_MOUSE3
+Macro[253].Macro=/.
+Macro[253].Condition=TRUE
+Macro[253].Control=1
+
+# KEY_MOUSE4
+Macro[254].Macro=
+Macro[254].Condition=TRUE
+
+# CONTROL_DEFINE REGION
+Macro[257].Macro=$${$$<defineregion.txt>}$$
+Macro[257].Condition=TRUE
+
+# CONTROL_LABEL 258
+Macro[258].Macro=
+Macro[258].Condition=TRUE
+
+# CONTROL_BUTTON 260
+Macro[260].Macro=/mvtp front_world
+Macro[260].Condition=TRUE
+
+# CONTROL_LABEL 261
+Macro[261].Macro=
+Macro[261].Condition=TRUE
+
+# CONTROL_BUTTON 262
+Macro[262].Macro=/butcher 10
+Macro[262].Condition=TRUE
+
+# CONTROL_BUTTON 263
+Macro[263].Macro=/butcher 100
+Macro[263].Condition=TRUE
+
+# CONTROL_BUTTON 264
+Macro[264].Macro=/mvtp world
+Macro[264].Condition=TRUE
+
+# CONTROL_BUTTON 265
+Macro[265].Macro=/mvtp flatlands
+Macro[265].Condition=TRUE
+
+# CONTROL_BUTTON 266
+Macro[266].Macro=/mvtp world|/home
+Macro[266].Condition=TRUE
+
+# CONTROL_REDEFINE REGION
+Macro[267].Macro=/rg redefine $$[regionname]
+Macro[267].Condition=TRUE
+
+# CONTROL_BUTTON 268
+Macro[268].Macro=/mvtp flatlands|/home
+Macro[268].Condition=TRUE
+
+# CONTROL_BUTTON 269
+Macro[269].Macro=/butcher -f 10
+Macro[269].Condition=TRUE
+
+# CONTROL_BUTTON 270
+Macro[270].Macro=/butcher -f 100
+Macro[270].Condition=TRUE
+
+# CONTROL_BUTTON 271
+Macro[271].Macro=$${$$<cyclegm.txt>}$$
+Macro[271].OnKeyUp=/gm 1
+Macro[271].Condition=MODE = 1
+
+# CONTROL_BUTTON 272
+Macro[272].Macro=/weather sunny -1 world|/weather sunny -1 front_world|/weather sunny -1 flat_world
+Macro[272].Condition=TRUE
+
+# CONTROL_BUTTON 273
+Macro[273].Macro=/time world morning|/time flat_world morning|/time front_world morning
+Macro[273].Condition=TRUE
+
+# CONTROL_BUTTON 274
+Macro[274].Macro=$${DO;KEY(attack);WAIT(50ms);UNTIL(CTRL)}$$
+Macro[274].Condition=TRUE
+
+# CONTROL_BUTTON 275
+Macro[275].Macro=$${DO;KEY(use);UNTIL(CTRL);}$$
+Macro[275].Condition=TRUE
+
+# CONTROL_BUTTON 276
+Macro[276].Macro=/vanish
+Macro[276].Condition=TRUE
+
+# CONTROL_BUTTON 277
+Macro[277].Macro=/rg s
+Macro[277].Condition=TRUE
+
+# CONTROL_BUTTON 278
+Macro[278].Macro=/rg i
+Macro[278].Condition=TRUE
+
+# CONTROL_LABEL 280
+Macro[280].Macro=
+Macro[280].Condition=TRUE
+
+# CONTROL_LABEL 281
+Macro[281].Macro=
+Macro[281].Condition=TRUE
+
+# CONTROL_LABEL 282
+Macro[282].Macro=
+Macro[282].Condition=TRUE
+
+# CONTROL_LABEL 283
+Macro[283].Macro=
+Macro[283].Condition=TRUE
+
+# CONTROL_BUTTON 286
+Macro[286].Macro=/mvtp front_world|/home
+Macro[286].Condition=TRUE
+
+# CONTROL_LABEL 287
+Macro[287].Macro=
+Macro[287].Condition=TRUE
+
+# CONTROL_BUTTON 288
+Macro[288].Macro=@$$u $$!
+Macro[288].Condition=TRUE
+
+# CONTROL_BUTTON 289
+Macro[289].Macro=/broadcast $$!
+Macro[289].Condition=TRUE
+
+# CONTROL_BUTTON 290
+Macro[290].Macro=/r $$!
+Macro[290].Condition=TRUE
+
+# CONTROL_BUTTON 291
+Macro[291].Macro=/me $$!
+Macro[291].Condition=TRUE
+
+# CONTROL_BUTTON 292
+Macro[292].Macro=&0$$!
+Macro[292].Condition=TRUE
+
+# CONTROL_BUTTON 293
+Macro[293].Macro=&1$$!
+Macro[293].Condition=TRUE
+
+# CONTROL_BUTTON 294
+Macro[294].Macro=/tp $$u
+Macro[294].Condition=TRUE
+
+# CONTROL_BUTTON 295
+Macro[295].Macro=&2$$!
+Macro[295].Condition=TRUE
+
+# CONTROL_BUTTON 296
+Macro[296].Macro=&3$$!
+Macro[296].Condition=TRUE
+
+# CONTROL_BUTTON 297
+Macro[297].Macro=&4$$!
+Macro[297].Condition=TRUE
+
+# CONTROL_BUTTON 298
+Macro[298].Macro=&5$$!
+Macro[298].Condition=TRUE
+
+# CONTROL_BUTTON 299
+Macro[299].Macro=&6$$!
+Macro[299].Condition=TRUE
+
+# CONTROL_BUTTON 300
+Macro[300].Macro=&7$$!
+Macro[300].Condition=TRUE
+
+# CONTROL_BUTTON 301
+Macro[301].Macro=&8$$!
+Macro[301].Condition=TRUE
+
+# CONTROL_BUTTON 302
+Macro[302].Macro=&9$$!
+Macro[302].Condition=TRUE
+
+# CONTROL_BUTTON 303
+Macro[303].Macro=&a$$!
+Macro[303].Condition=TRUE
+
+# CONTROL_BUTTON 304
+Macro[304].Macro=&b$$!
+Macro[304].Condition=TRUE
+
+# CONTROL_BUTTON 305
+Macro[305].Macro=&c$$!
+Macro[305].Condition=TRUE
+
+# CONTROL_BUTTON 306
+Macro[306].Macro=&d$$!
+Macro[306].Condition=TRUE
+
+# CONTROL_BUTTON 307
+Macro[307].Macro=&e$$!
+Macro[307].Condition=TRUE
+
+# CONTROL_BUTTON 308
+Macro[308].Macro=&f$$!
+Macro[308].Condition=TRUE
+
+# CONTROL_BUTTON 309
+Macro[309].Macro=&k$$!
+Macro[309].Condition=TRUE
+
+# CONTROL_BUTTON 310
+Macro[310].Macro=&l$$!
+Macro[310].Condition=TRUE
+
+# CONTROL_BUTTON 311
+Macro[311].Macro=&m$$!
+Macro[311].Condition=TRUE
+
+# CONTROL_BUTTON 312
+Macro[312].Macro=&n$$!
+Macro[312].Condition=TRUE
+
+# CONTROL_BUTTON 313
+Macro[313].Macro=&o$$!
+Macro[313].Condition=TRUE
+
+# CONTROL_BUTTON 314
+Macro[314].Macro=&r$$!
+Macro[314].Condition=TRUE
+
+# CONTROL_BUTTON 315
+Macro[315].Macro=/call $$u
+Macro[315].Condition=TRUE
+
+# CONTROL_BUTTON 316
+Macro[316].Macro=/tp $$px $$py $$pz
+Macro[316].Condition=TRUE
+
+# EVENT_ONJOINGAME
+Macro[1000].Macro=$${$$<onJoinGame.txt>}$$
+Macro[1000].Condition=TRUE
+
+# EVENT_ONCHAT
+Macro[1001].Macro=$${SET(@lastmessage, %CHATCLEAN%);}$$
+Macro[1001].Condition=TRUE
+
+# EVENT_ONHEALTHCHANGE
+Macro[1002].Macro=
+Macro[1002].Condition=TRUE
+
+# EVENT_ONFOODCHANGE
+Macro[1003].Macro=
+Macro[1003].Condition=TRUE
+
+# EVENT_ONARMOURCHANGE
+Macro[1004].Macro=
+Macro[1004].Condition=TRUE
+
+# EVENT_ONWORLDCHANGE
+Macro[1005].Macro=$${$$<fly.txt>}$$
+Macro[1005].Condition=TRUE
+
+# EVENT_ONMODECHANGE
+Macro[1006].Macro=
+Macro[1006].Condition=TRUE
+
+# EVENT_ONINVENTORYSLOTCHANGE
+Macro[1007].Macro=
+Macro[1007].Condition=TRUE
+
+# EVENT_ONOXYGENCHANGE
+Macro[1008].Macro=
+Macro[1008].Condition=TRUE
+
+# EVENT_ONXPCHANGE
+Macro[1009].Macro=
+Macro[1009].Condition=TRUE
+
+# EVENT_ONLEVELCHANGE
+Macro[1010].Macro=
+Macro[1010].Condition=TRUE
+
+# EVENT_ONITEMDURABILITYCHANGE
+Macro[1011].Macro=
+Macro[1011].Condition=TRUE
+
+# EVENT_ONWEATHERCHANGE
+Macro[1012].Macro=
+Macro[1012].Condition=TRUE
+
+# EVENT_ONPICKUPITEM
+Macro[1013].Macro=
+Macro[1013].Condition=TRUE
+
+# EVENT_ONPLAYERJOINED
+Macro[1014].Macro=
+Macro[1014].Condition=TRUE
+
+# EVENT_ONSHOWGUI
+Macro[1015].Macro=
+Macro[1015].Condition=TRUE
+
+# EVENT_ONARMOURDURABILITYCHANGE
+Macro[1016].Macro=
+Macro[1016].Condition=TRUE
+
+# EVENT_ONAUTOCRAFTINGCOMPLETE
+Macro[1017].Macro=
+Macro[1017].Condition=TRUE
+
+# EVENT_ONCONFIGCHANGE
+Macro[1018].Macro=
+Macro[1018].Condition=TRUE
+
+# EVENT_ONSENDCHATMESSAGE
+Macro[1020].Macro=
+Macro[1020].Condition=TRUE
 

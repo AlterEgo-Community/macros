@@ -1,58 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <variables>
     <config name="@default">
-        <!-- KEY_L -->
-        <template id="38">
-            <int key="mNum">11</int>
-            <int key="messageNumber">11</int>
-            <int key="messageIndex">10</int>
-            <int key="message_index">14</int>
-            <string key="message">&amp;messages[#messageIndex]</string>
-            <array key="messages" type="string">
-                <element pos="0">Replace your WorldEdit selection with air by pressing Ctrl+Delete.</element>
-                <element pos="1">Select the region you're standing with by pressing Ctrl+N.</element>
-                <element pos="2">Press B to butcher mobs up to 10 blocks away. Modify with Ctrl to increase to 100. Modify with Shift to include friendly mobs.</element>
-                <element pos="3">Press V to toggle your vanish state.</element>
-                <element pos="4">Press Ctrl+Shift+V to expand your WorldEdit selection vertically.</element>
-                <element pos="5">Press C to toggle between creative and survival.</element>
-                <element pos="6">To show the button GUI press the key you set as your macro activate key.</element>
-                <element pos="7">Ctrl+Right/left click replaces the WorldEdit wand.</element>
-                <element pos="8">Ctrl+Shift+Right/left click replaces the WorldEdit compass.</element>
-                <element pos="9">Ctrl+Scroll wheel lets you scroll through handy tools in your currently selected hotbar slot.</element>
-                <element pos="10">Ctrl+Middle mouse replaces your hotbar with either the modtools2, redstone1, redstone2 or redstone3 kit.</element>
-                <element pos="11">Ctrl+history back on your mouse lets you repeat the last chat or button command.</element>
-                <element pos="12">WorldEdit history and clipboard commands are accessed with the equivalent text-editor-style keyboard shortcut. E.g. Ctrl+C.</element>
-                <element pos="13">Rotate your WorldEdit selection using Ctrl+R.</element>
-                <element pos="14">Toggle downfall by pressing T. Set the time to morning with Ctrl+M.</element>
-                <element pos="15">Undo VoxelSniper actions with Ctrl+U. Undo 10 of them with Ctrl+Shift+U.</element>
-                <element pos="16">Press H to go to your home in flatlands. Press Ctrl+H to go to your home in world.</element>
-                <element pos="17">Got a TerrainControl world and need to regen the chunk you're in? Press Ctrl+J.</element>
-                <element pos="18">Access a list of runnable macros by pressing L.</element>
-                <element pos="19">Teleport between floor levels with Ctrl+Scroll.</element>
-            </array>
-        </template>
         <!-- EVENT_ONJOINGAME -->
         <template id="1000">
-            <int key="message_index">16</int>
+            <int key="message_index">11</int>
             <array key="messages" type="string">
                 <element pos="0">Replace your WorldEdit selection with air by pressing Ctrl+Delete.</element>
-                <element pos="1">Select the region you're standing in by pressing Ctrl+N.</element>
-                <element pos="2">Press B to butcher mobs up to 10 blocks away. Modify with Ctrl to increase to 100. Modify with Shift to include friendly mobs.</element>
-                <element pos="3">Press V to toggle your vanish state.</element>
-                <element pos="4">Press Ctrl+Shift+V to expand your WorldEdit selection vertically.</element>
-                <element pos="5">Press C to toggle between creative and survival.</element>
-                <element pos="6">To show the button GUI press the key you set as your macro activate key.</element>
-                <element pos="7">Ctrl+Right/left click replaces the WorldEdit wand.</element>
-                <element pos="8">Ctrl+Shift+Right/left click replaces the WorldEdit compass.</element>
-                <element pos="9">Ctrl+Scroll wheel lets you scroll through handy tools in your currently selected hotbar slot.</element>
-                <element pos="10">Ctrl+Middle mouse replaces your hotbar with either the modtools2, redstone1, redstone2 or redstone3 kit.</element>
-                <element pos="11">Ctrl+history back on your mouse lets you repeat the last chat or button command.</element>
-                <element pos="12">WorldEdit history and clipboard commands are accessed with the equivalent text-editor-style keyboard shortcut. E.g. Ctrl+C.</element>
-                <element pos="13">Rotate your WorldEdit selection using Ctrl+R.</element>
-                <element pos="14">Toggle downfall by pressing T. Set the time to morning with Ctrl+M.</element>
-                <element pos="15">Undo VoxelSniper actions with Ctrl+U. Undo 10 of them with Ctrl+Shift+U.</element>
-                <element pos="16">Press H to go to your home in flatlands. Press Ctrl+H to go to your home in world.</element>
-                <element pos="17">Got a TerrainControl world and need to regen the chunk you're in? Press Ctrl+J.</element>
+                <element pos="1">Press B to butcher mobs up to 10 blocks away. Increase tenfold with Ctrl. Include friendly mobs with Shift.</element>
+                <element pos="2">Appear or disappear in VanishNoPacket by pressing V</element>
+                <element pos="3">Press Ctrl+Shift+V to expand your WorldEdit selection vertically.</element>
+                <element pos="4">Press C to cycle between game modes.</element>
+                <element pos="5">To show the button GUI press the key you set as your macro activate key.</element>
+                <element pos="6">Instead of the WorldEdit wand, use Ctrl+Left/right click.</element>
+                <element pos="7">Instead of the compass, use Ctrl+Shift+Left/right click.</element>
+                <element pos="8">Ctrl+Scroll wheel lets you scroll through handy tools in your currently selected hotbar slot.</element>
+                <element pos="9">Ctrl+history back on your mouse lets you repeat the last chat or button command.</element>
+                <element pos="10">You can use text editor shortcuts for the WorldEdit history and clipboard.</element>
+                <element pos="11">Rotate your WorldEdit selection using Ctrl+R.</element>
+                <element pos="12">Undo VoxelSniper actions with Ctrl+U. Undo 10 of them with Ctrl+Shift+U.</element>
+                <element pos="13">Press H to go to your home in flatlands. Press Ctrl+H to go to your home in world.</element>
+                <element pos="14">Access a list of runnable macros by pressing the context menu button next to Alt Gr.</element>
+                <element pos="15">Teleport between floor levels with Ctrl+Shift+Scroll.</element>
+                <element pos="16">WorldEdit selection: Arrows/PgUp/PgDn expands, Shift+Dir contracts, the fire moves and Ctrl 10*effect.</element>
+                <element pos="17">Outset or inset your WorldEdit selection in all directions with Home and End. Ctrl for 10*</element>
                 <element pos="18">Access a list of runnable macros by pressing L.</element>
                 <element pos="19">Teleport between floor levels with Ctrl+Scroll.</element>
             </array>
